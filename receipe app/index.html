@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SHARE YOUR RECIPE WITH US !</h1>
+    </header>
+    <main>
+        <section id="add-recipe">
+            <h2>Add Your Recipe Here ! </h2>
+            <form id="recipe-form">
+                <label for="name"><strong><i>Recipe Name:</i></strong></label>
+                <input type="text" id="name" required>
+                <label for="ingredients"><i> <strong>Ingredients:</strong></i></label>
+                <textarea id="ingredients" required></textarea>
+                <label for="steps"><i> <strong>Steps:</strong></i></label>
+                <textarea id="steps" required></textarea>
+                <label for="image"><i> <strong>Image URL:</strong></i></label>
+                <input type="url" id="image">
+                <button type="submit">SUBMIT</button>
+            </form>
+        </section>
+        <section id="recipes">
+            <h2>Delicious Recipes !</h2>
+            <div id="recipe-list"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
